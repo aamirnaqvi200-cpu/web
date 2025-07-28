@@ -63,24 +63,22 @@ function App() {
   const heroRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-  const textEl = document.getElementById('cursor-follow-text');
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!textEl) return;
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!heroRef.current || !textRef.current) return;
+      
+      const { clientX, clientY } = e;
+      const { innerWidth, innerHeight } = window;
+      
+      const x = (clientX / innerWidth - 0.5) * 15;
+      const y = (clientY / innerHeight - 0.5) * 15;
+      
+      textRef.current.style.transform = `translate(${x}px, ${y}px)`;
+    };
 
-    const { clientX, clientY } = e;
-    const { innerWidth, innerHeight } = window;
-
-    const x = (clientX / innerWidth - 0.5) * 30;
-    const y = (clientY / innerHeight - 0.5) * 30;
-
-    textEl.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
-  };
-
-  window.addEventListener('mousemove', handleMouseMove);
-  return () => window.removeEventListener('mousemove', handleMouseMove);
-}, []);
-
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   return (
     <div className="relative">
@@ -97,23 +95,19 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
   }}
 />
 
-     {/* Big Background Text with Cursor Follow */}
+       {/* Big Background Text with Cursor Follow */}
 <div 
   id="cursor-follow-text"
-  className="absolute z-10 text-[6rem] md:text-[10rem] font-extrabold tracking-tight text-white/10 select-none pointer-events-none"
+  className="absolute z-10 text-[6rem] md:text-[10rem] font-bold text-white/10 select-none pointer-events-none"
   style={{
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    whiteSpace: 'nowrap',
-    animation: 'fade-in-delayed 1s ease forwards',
-    animationDelay: '0.5s',
-    opacity: 0
+    whiteSpace: 'nowrap'
   }}
 >
   Aamir Naqvi
 </div>
-
 
        
         {/* Portrait */}
@@ -195,5 +189,22 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
     </div>
   );
 }
+useEffect(() => {
+  const textEl = document.getElementById('cursor-follow-text');
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!textEl) return;
+
+    const { clientX, clientY } = e;
+    const { innerWidth, innerHeight } = window;
+
+    const x = (clientX / innerWidth - 0.5) * 30;
+    const y = (clientY / innerHeight - 0.5) * 30;
+
+    textEl.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+  };
+
+  window.addEventListener('mousemove', handleMouseMove);
+  return () => window.removeEventListener('mousemove', handleMouseMove);
+}, []);
 
 export default App;
