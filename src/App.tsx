@@ -143,7 +143,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               VISUALS THAT
             </div>
             <div 
-              className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight mt-2 opacity-0 animate-fade-in-delayed"
+              className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}
             >
               BUILD BRANDS
