@@ -89,8 +89,6 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 <div 
   className="absolute inset-0 bg-cover bg-center opacity-100"
   style={{
-    top: '50%',
-    left: '50%',
     backgroundImage: `url('/public/bg.png')`,
   }}
 />
@@ -102,7 +100,11 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         >
           <div 
             className="text-[12rem] md:text-[16rem] lg:text-[12rem] font-bold text-white/10 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+            style={{ 
+              
+    top: '50%',
+    left: '50%',
+              animationDelay: '0.1s', animationFillMode: 'forwards' }}
           >
             Aamir Naqvi
           </div>
