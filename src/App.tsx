@@ -13,7 +13,7 @@ const testimonialBadges: TestimonialBadge[] = [
   { word: "VISIONARY", rating: 5, attribution: "— Forbes", position: { top: "10%", left: "25%" }, delay: 1.2 },
   { word: "MASTERFUL", rating: 5, attribution: "— Design Week", position: { top: "15%", left: "65%" }, delay: 1.8 },
   { word: "BRILLIANT", rating: 5, attribution: "— Creative Review", position: { top: "25%", left: "20%" }, delay: 2.4 },
-  { word: "INNOVATIVE", rating: 5, attribution: "— Fast Company", position: { top: "30%", left: "72%" }, delay: 3.0 },
+  { word: "INNOVATIVE", rating: 5, attribution: "— Fast Company", position: { top: "30%", left: "82%" }, delay: 3.0 },
   { word: "ICONIC", rating: 5, attribution: "— Dezeen", position: { top: "50%", left: "20%" }, delay: 2.1 },
   { word: "PROFOUND", rating: 5, attribution: "— AIGA", position: { top: "47%", left: "84%" }, delay: 3.3 },
   { word: "STUNNING", rating: 5, attribution: "— Vogue", position: { top: "12%", left: "10%" }, delay: 2.7 },
