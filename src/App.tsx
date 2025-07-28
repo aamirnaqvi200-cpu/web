@@ -165,7 +165,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         {/* Background Text - Aamir Naqvi at Bottom */}
         <div 
           ref={textRef}
-          className="absolute bottom-0 left-[200px] transform -translate-x-1/2 pointer-events-none transition-transform duration-100 ease-out"
+          className="absolute bottom-0 left-[300px] transform -translate-x-1/2 pointer-events-none transition-transform duration-100 ease-out"
           style={{ bottom: '5%' }}
         >
           <div 
