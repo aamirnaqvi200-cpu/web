@@ -137,7 +137,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               I EDIT
             </div>
             <div 
-              className="text-4xl md:text-6xl lg:text-7xl font-mid tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
+              className="text-1xl md:text-2xl lg:text-4xl font-mid tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
             >
               VISUALS THAT
