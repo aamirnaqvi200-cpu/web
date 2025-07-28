@@ -95,20 +95,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
   }}
 />
 
-       {/* Big Background Text with Cursor Follow */}
-<div 
-  id="cursor-follow-text"
-  className="absolute z-10 text-[6rem] md:text-[10rem] font-bold text-white/10 select-none pointer-events-none"
-  style={{
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    whiteSpace: 'nowrap'
-  }}
->
-  Aamir Naqvi
-</div>
-
+        {/* Background Text - Aamir Naqvi */}
        
         {/* Portrait */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ top: '-10%' }}>
@@ -175,6 +162,23 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           <TestimonialBadge key={index} badge={badge} />
         ))}
 
+        {/* Background Text - Aamir Naqvi at Bottom */}
+        <div 
+          ref={textRef}
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pointer-events-none transition-transform duration-100 ease-out"
+          style={{ bottom: '5%' }}
+        >
+          <div 
+            className="text-[4rem] md:text-[8rem] lg:text-[16rem] font-bold text-black/20 select-none leading-none opacity-0 animate-fade-in-delayed"
+            style={{ 
+              animationDelay: '0.1s', 
+              animationFillMode: 'forwards' 
+            }}
+          >
+            AAMIR NAQVI
+          </div> 
+        </div>
+
         {/* Bottom Scroll Indicator */}
         <div 
           className="absolute bottom-2 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
@@ -189,22 +193,5 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
     </div>
   );
 }
-useEffect(() => {
-  const textEl = document.getElementById('cursor-follow-text');
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!textEl) return;
-
-    const { clientX, clientY } = e;
-    const { innerWidth, innerHeight } = window;
-
-    const x = (clientX / innerWidth - 0.5) * 30;
-    const y = (clientY / innerHeight - 0.5) * 30;
-
-    textEl.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
-  };
-
-  window.addEventListener('mousemove', handleMouseMove);
-  return () => window.removeEventListener('mousemove', handleMouseMove);
-}, []);
 
 export default App;
