@@ -114,7 +114,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
                 alt="Portrait"
                 className="w-full h-full object-cover grayscale contrast-110 brightness-90"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
             </div> 
           </div>
         </div> 
@@ -169,7 +169,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           style={{ bottom: '5%' }}
         >
           <div 
-            className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold text-black/5 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{ 
               animationDelay: '0.1s', 
               animationFillMode: 'forwards' 
