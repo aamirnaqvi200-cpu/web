@@ -100,10 +100,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         >
           <div 
             className="text-[12rem] md:text-[16rem] lg:text-[12rem] font-bold text-white/10 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{ 
-              
-    top: '90%',
-    left: '50%',
+            style={{  top: '90%', left: '50%',
               animationDelay: '0.1s', animationFillMode: 'forwards' }}
           >
             Aamir Naqvi
