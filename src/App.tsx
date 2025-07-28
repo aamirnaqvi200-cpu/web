@@ -134,6 +134,9 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.8s', animationFillMode: 'forwards'  }}
             >
+             
+              
+              
               I EDIT
             </div>
             <div 
