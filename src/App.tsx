@@ -120,40 +120,26 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         </div> 
 
         {/* Main Typography */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '25%' }}>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '45%' }}>
           <div className="text-center z-10 px-6">
             <div 
-              className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
+              className="text-2xl md:text-4xl lg:text-5xl font-bosenAlt tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.8s', animationFillMode: 'forwards'  }}
             >
               I EDIT
             </div>
             <div 
-              className="text-2xl md:text-3xl lg:text-4xl font-mid tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
+              className="text-2xl md:text-3xl lg:text-4xl font-bosenAlt tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
             >
               VISUALS THAT
             </div>
             <div 
-              className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight mt-2 opacity-0 animate-fade-in-delayed"
+              className="text-2xl md:text-4xl lg:text-5xl font-bosenAlt tracking-tight text-white leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}
             >
               BUILD BRANDS
             </div>
-            
-            {/* Subtitle */}
-            <div 
-              className="text-lg md:text-xl text-white/60 font-light tracking-wide mt-8 max-w-md mx-auto opacity-0 animate-fade-in-delayed"
-              style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}
-            >
-              Where artistry meets innovation, and every detail tells a story worth remembering.
-            </div>
-
-            {/* Accent Line */}
-            <div 
-              className="w-24 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-8 opacity-0 animate-fade-in-delayed"
-              style={{ animationDelay: '2.2s', animationFillMode: 'forwards' }}
-            />
           </div>
         </div>
 
@@ -165,11 +151,11 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         {/* Background Text - Aamir Naqvi at Bottom */}
         <div 
           ref={textRef}
-          className="absolute bottom-0 left-[200px] top-[500px] transform -translate-x-1/2 pointer-events-none transition-transform duration-100 ease-out"
-          style={{ bottom: '5%' }}
+          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
+          style={{ zIndex: -1 }}
         >
           <div 
-            className="text-[4rem] md:text-[10rem] lg:text-[8rem] font-bold text-black/40 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[4rem] md:text-[10rem] lg:text-[12rem] font-bosenAlt text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{
               animationDelay: '0.1s',  
               animationFillMode: 'forwards' 
@@ -179,14 +165,15 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           </div>
         </div>
 
-        {/* Bottom Scroll Indicator */}
+        {/* Bottom Triangle Shape */}
         <div 
-          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
-          <div className="flex flex-col items-center text-white/40">
-            <div className="text-xs tracking-widest font-light mb-3">EXPLORE</div>
-            <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse" />
+          <div className="flex flex-col items-center">
+            <div 
+              className="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[20px] border-l-transparent border-r-transparent border-t-cyan-400 animate-bounce-triangle"
+            />
           </div>
         </div>
       </div>
