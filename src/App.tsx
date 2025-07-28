@@ -94,44 +94,26 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 />
 
        
-      {/* Portrait (fade-in animation, no effects, full control) */}
-<div 
-  ref={portraitRef}
-  className="absolute z-20 flex items-center justify-center opacity-0 animate-fade-in-delayed"
-  style={{
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '280px', // You can change size
-    height: '280px',
-    animationDelay: '0.3s',
-    animationFillMode: 'forwards',
-  }}
->
-  <img 
-    src="/public/me.png"
-    alt="Portrait"
-    className="w-full h-full object-cover rounded-full" // or remove `rounded-full` for square
-  />
-</div>
-{/* Big Background Text with Cursor Follow */}
-<div 
-  id="cursor-follow-text"
-  className="absolute z-10 text-[6rem] md:text-[10rem] font-extrabold tracking-tight text-white/10 select-none pointer-events-none"
-  style={{
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    whiteSpace: 'nowrap',
-    animation: 'fade-in-delayed 1s ease forwards',
-    animationDelay: '0.5s',
-    opacity: 0
-  }}
->
-  Aamir Naqvi
-</div>
+        {/* Portrait */}
+        <div 
+          ref={portraitRef}
+          className="absolute inset-0 flex items-center justify-center transition-transform duration-100 ease-out"
+        >
+          <div className="relative">
+            <div 
+              className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden opacity-0 animate-fade-in-delayed"
+              style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+            > 
+              <img 
+                src="/public/me.png"
+                alt="Portrait"
+                className="w-full h-full object-cover grayscale contrast-110 brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+            </div> 
+          </div>
+        </div> 
 
-      
         {/* Main Typography */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="text-center z-10 px-6">
