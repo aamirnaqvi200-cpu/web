@@ -89,6 +89,8 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 <div 
   className="absolute inset-0 bg-cover bg-center opacity-100"
   style={{
+    top: '50%',
+    left: '50%',
     backgroundImage: `url('/public/bg.png')`,
   }}
 />
