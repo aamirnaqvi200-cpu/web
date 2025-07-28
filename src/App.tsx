@@ -99,7 +99,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
        
         {/* Portrait */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ top: '-10%' }}>
-          <div className="relative">
+          <div className="relative"> style={{ zIndex: 2 }}
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
               style={{
@@ -152,7 +152,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div 
           ref={textRef}
           className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-          style={{ zIndex: 2 }}
+          style={{ zIndex: 1 }}
         >
           <div 
             className="text-[4rem] md:text-[10rem] lg:text-[12rem] font-bosenAlt text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
