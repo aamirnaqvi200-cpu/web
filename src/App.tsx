@@ -102,7 +102,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
             className="text-[12rem] md:text-[16rem] lg:text-[20rem] font-bold text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
           >
-            AAMIR NAQVI
+            Aamir Naqvi
           </div>
         </div>
        
