@@ -176,6 +176,24 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
   Aamir Naqvi
 </div>
 
+        useEffect(() => {
+  const textEl = document.getElementById('cursor-follow-text');
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!textEl) return;
+
+    const { clientX, clientY } = e;
+    const { innerWidth, innerHeight } = window;
+
+    const x = (clientX / innerWidth - 0.5) * 40; // More intensity
+    const y = (clientY / innerHeight - 0.5) * 40;
+
+    textEl.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+  };
+
+  window.addEventListener('mousemove', handleMouseMove);
+  return () => window.removeEventListener('mousemove', handleMouseMove);
+}, []);
+
 
         {/* Bottom Scroll Indicator */}
         <div 
