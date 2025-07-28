@@ -40,7 +40,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
             <Star 
               key={i} 
               size={10} 
-              className="fill-white/20 text-white/70 mr-0.5" 
+              className="fill-white/20 text-white/20 mr-0.5" 
             />
           ))}
         </div>
