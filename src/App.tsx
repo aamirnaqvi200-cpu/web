@@ -120,7 +120,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           {/* Background Text - Aamir Naqvi at Bottom */}
         <div 
           ref={textRef}
-          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
+          className="absolute inset-0 absolute z-10 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
           style={{ zIndex: -1, top: '65%' }}
         >
           <div 
