@@ -109,6 +109,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
        
         {/* Portrait */}
         <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute top-10 left-4 md:top-1/4 md:left-1/2 transform md:-translate-x-1/2">
           <div className="relative">
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
