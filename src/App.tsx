@@ -99,7 +99,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
         >
           <div 
-            className="text-[12rem] md:text-[16rem] lg:text-[12rem] font-bold text-white/12 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[12rem] md:text-[16rem] lg:text-[12rem] font-bold text-white/14 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
           >
             Aamir Naqvi
