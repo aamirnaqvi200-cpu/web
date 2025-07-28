@@ -115,8 +115,8 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               style={{ top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '700px', // You can change size
-    height: '700px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
+    width: '705px', // You can change size
+    height: '705px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
             > 
               <img 
                 src="/public/me.png"
