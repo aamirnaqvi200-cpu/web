@@ -51,7 +51,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
         </div>
 
         {/* Attribution */}
-        <div className="mt-1 text-sm text-white/10 font-light tracking-wide">
+        <div className="mt-1 text-sm text-white/20 font-light tracking-wide">
           {badge.attribution}
         </div>
       </div>
