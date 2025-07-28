@@ -131,7 +131,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="text-center z-10 px-6">
             <div 
-              className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
+              className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
             >
               I EDIT
