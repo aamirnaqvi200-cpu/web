@@ -16,7 +16,7 @@ const testimonialBadges: TestimonialBadge[] = [
   { word: "INNOVATIVE", rating: 5, attribution: "— Fast Company", position: { top: "30%", left: "92%" }, delay: 3.0 },
   { word: "ICONIC", rating: 5, attribution: "— Dezeen", position: { top: "70%", left: "3%" }, delay: 2.1 },
   { word: "PROFOUND", rating: 5, attribution: "— AIGA", position: { top: "75%", left: "90%" }, delay: 3.3 },
-  { word: "STUNNING", rating: 5, attribution: "— Vogue", position: { top: "12%", left: "50%" }, delay: 2.7 },
+  { word: "STUNNING", rating: 5, attribution: "— Vogue", position: { top: "12%", left: "10%" }, delay: 2.7 },
   { word: "EXCEPTIONAL", rating: 5, attribution: "— GQ", position: { top: "68%", left: "50%" }, delay: 3.6 },
   { word: "REVOLUTIONARY", rating: 5, attribution: "— Wired", position: { top: "40%", left: "2%" }, delay: 2.0 },
   { word: "CAPTIVATING", rating: 5, attribution: "— Elle", position: { top: "45%", left: "95%" }, delay: 3.9 }
