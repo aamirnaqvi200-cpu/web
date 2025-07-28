@@ -168,7 +168,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed z-30"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
-          <div className="flex flex-col items-center z-30">
+          <div className="flex flex-col items-center">
             <div 
               className="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[20px] border-l-transparent border-r-transparent border-t-cyan-400 animate-bounce-triangle"
             />
