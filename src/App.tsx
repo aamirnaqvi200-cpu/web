@@ -114,7 +114,6 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
               style={{ top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
     width: '755px', // You can change size
     height: '755px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
             > 
