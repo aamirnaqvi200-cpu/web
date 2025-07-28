@@ -108,25 +108,26 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         </div>
        
         {/* Portrait */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="absolute top-10 left-4 md:top-1/4 md:left-1/2 transform md:-translate-x-1/2">
-          <div className="relative">
-            <div 
-              className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
-              style={{ 
-             
-    width: '865px', // You can change size
-    height: '865px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
-            > 
-              <img 
-                src="/public/me.png"
-                alt="Portrait"
-                className="w-full h-full object-cover grayscale contrast-110 brightness-90"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
-            </div> 
-          </div>
-        </div> 
+<div className="absolute top-[10%] left-1/2 transform -translate-x-1/2 md:top-[15%] z-10">
+  <div className="relative">
+    <div 
+      className="overflow-hidden opacity-0 animate-fade-in-delayed"
+      style={{ 
+        width: '865px',
+        height: '865px',
+        animationDelay: '0.3s',
+        animationFillMode: 'forwards'
+      }}
+    > 
+      <img 
+        src="/public/me.png"
+        alt="Portrait"
+        className="w-full h-full object-cover grayscale contrast-110 brightness-90"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
+    </div> 
+  </div>
+</div>
 
         {/* Main Typography */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
