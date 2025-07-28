@@ -134,19 +134,19 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
             >
-              REDEFINING
+              I EDIT
             </div>
             <div 
               className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
             >
-              THE BOUNDARIES OF
+              VISUALS THAT
             </div>
             <div 
               className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}
             >
-              CREATIVE VISION
+              BUILD BRANDS
             </div>
             
             {/* Subtitle */}
