@@ -94,8 +94,6 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
     backgroundImage: `url('/public/bg.png')`,
   }}
 />
-
-        {/* Background Text - Aamir Naqvi */}
        
         {/* Portrait */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ top: '-10%' }}>
