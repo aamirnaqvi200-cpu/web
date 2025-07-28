@@ -47,7 +47,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
 
        <div className="relative inline-block text-[1.6rem] sm:text-2xl font-bosenAlt uppercase tracking-wide leading-none">
           {/* Actual Word with Shine Animation */}
-          <span className="relative z-10 text-white/10 animate-shine">{badge.word}</span>
+          <span className="relative z-10 text-white/100 animate-shine">{badge.word}</span>
         </div>
 
         {/* Attribution */}
@@ -169,14 +169,14 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           style={{ bottom: '5%' }}
         >
           <div 
-            className="text-[4rem] md:text-[8rem] lg:text-[16rem] font-bold text-black/20 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{ 
               animationDelay: '0.1s', 
               animationFillMode: 'forwards' 
             }}
           >
             AAMIR NAQVI
-          </div> 
+          </div>
         </div>
 
         {/* Bottom Scroll Indicator */}
