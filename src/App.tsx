@@ -150,7 +150,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div 
           ref={textRef}
           className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-          style={{ zIndex: 0, top: '60%' }}
+          style={{ zIndex: 0, top: '65%' }}
         >
           <div 
             className="text-[4rem] md:text-[10rem] lg:text-[15rem] font-bosenAlt text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
