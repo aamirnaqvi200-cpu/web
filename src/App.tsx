@@ -19,8 +19,8 @@ const testimonialBadges: TestimonialBadge[] = [
   { word: "STUNNING", rating: 5, attribution: "— Vogue", position: { top: "12%", left: "10%" }, delay: 2.7 },
   { word: "EXCEPTIONAL", rating: 5, attribution: "— GQ", position: { top: "68%", left: "50%" }, delay: 3.6 },
   { word: "REVOLUTIONARY", rating: 5, attribution: "— Wired", position: { top: "40%", left: "2%" }, delay: 2.0 },
-  { word: "CAPTIVATING", rating: 5, attribution: "— Elle", position: { top: "45%", left: "63%" }, delay: 3.9 }
-  { word: "CREATIVE", rating: 5, attribution: "— Inkwellmedia", position: { top: "45%", left: "63%" }, delay: 3.9 }
+  { word: "CAPTIVATING", rating: 5, attribution: "— Elle", position: { top: "45%", left: "63%" }, delay: 3.9 },
+    { word: "CREATIVE", rating: 5, attribution: "— Inkwellmedia", position: { top: "45%", left: "63%" }, delay: 3.9 }
 ];
 
 function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
