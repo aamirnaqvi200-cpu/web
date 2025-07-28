@@ -170,8 +170,8 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         >
           <div 
             className=" font-bold text-black/40 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{ width: '800px',
-                height: '400px',
+            style={{ width: '800%',
+                height: '400%',
               animationDelay: '0.1s',  
               animationFillMode: 'forwards' 
             }}
