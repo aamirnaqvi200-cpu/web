@@ -169,7 +169,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           style={{ bottom: '5%' }}
         >
           <div 
-            className="text-[4rem] md:text-[15rem] lg:text-[8rem] font-bold text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[4rem] md:text-[16rem] lg:text-[16rem] font-bold text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{ 
               animationDelay: '0.1s', 
               animationFillMode: 'forwards' 
