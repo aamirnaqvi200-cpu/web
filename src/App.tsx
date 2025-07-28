@@ -47,7 +47,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
 
        <div className="relative inline-block text-[1.6rem] sm:text-2xl font-bosenAlt uppercase tracking-wide leading-none">
           {/* Actual Word with Shine Animation */}
-          <span className="relative z-10 text-white/100 animate-shine">{badge.word}</span>
+          <span className="relative z-10 text-white/10 animate-shine">{badge.word}</span>
         </div>
 
         {/* Attribution */}
