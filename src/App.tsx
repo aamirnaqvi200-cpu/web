@@ -10,12 +10,16 @@ interface TestimonialBadge {
 }
 
 const testimonialBadges: TestimonialBadge[] = [
-  { word: "VISIONARY", rating: 5, attribution: "— Forbes", position: { top: "15%", left: "12%" }, delay: 1.2 },
-  { word: "MASTERFUL", rating: 5, attribution: "— Design Week", position: { top: "25%", left: "85%" }, delay: 1.8 },
-  { word: "BRILLIANT", rating: 5, attribution: "— Creative Review", position: { top: "65%", left: "8%" }, delay: 2.4 },
-  { word: "INNOVATIVE", rating: 5, attribution: "— Fast Company", position: { top: "75%", left: "88%" }, delay: 3.0 },
-  { word: "ICONIC", rating: 5, attribution: "— Dezeen", position: { top: "45%", left: "92%" }, delay: 2.1 },
-  { word: "PROFOUND", rating: 5, attribution: "— AIGA", position: { top: "85%", left: "15%" }, delay: 3.3 }
+  { word: "VISIONARY", rating: 5, attribution: "— Forbes", position: { top: "10%", left: "8%" }, delay: 1.2 },
+  { word: "MASTERFUL", rating: 5, attribution: "— Design Week", position: { top: "15%", left: "88%" }, delay: 1.8 },
+  { word: "BRILLIANT", rating: 5, attribution: "— Creative Review", position: { top: "25%", left: "5%" }, delay: 2.4 },
+  { word: "INNOVATIVE", rating: 5, attribution: "— Fast Company", position: { top: "30%", left: "92%" }, delay: 3.0 },
+  { word: "ICONIC", rating: 5, attribution: "— Dezeen", position: { top: "70%", left: "3%" }, delay: 2.1 },
+  { word: "PROFOUND", rating: 5, attribution: "— AIGA", position: { top: "75%", left: "90%" }, delay: 3.3 },
+  { word: "STUNNING", rating: 5, attribution: "— Vogue", position: { top: "12%", left: "50%" }, delay: 2.7 },
+  { word: "EXCEPTIONAL", rating: 5, attribution: "— GQ", position: { top: "68%", left: "50%" }, delay: 3.6 },
+  { word: "REVOLUTIONARY", rating: 5, attribution: "— Wired", position: { top: "40%", left: "2%" }, delay: 2.0 },
+  { word: "CAPTIVATING", rating: 5, attribution: "— Elle", position: { top: "45%", left: "95%" }, delay: 3.9 }
 ];
 
 function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
@@ -42,11 +46,9 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
         </div>
 
        <div className="relative inline-block text-[1.6rem] sm:text-2xl font-bosenAlt uppercase tracking-wide leading-none">
-  {/* Actual Word */}
-  <span className="relative z-10 text-white/50">{badge.word}</span>
-
- 
-</div>
+          {/* Actual Word with Shine Animation */}
+          <span className="relative z-10 text-white/50 animate-shine">{badge.word}</span>
+        </div>
 
         {/* Attribution */}
         <div className="mt-1 text-sm text-white/20 font-light tracking-wide">
@@ -94,28 +96,18 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 />
 
         {/* Background Text - Aamir Naqvi */}
-        <div 
-          ref={textRef}
-          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-        >
-          <div 
-            className="text-[12rem] md:text-[16rem] lg:text-[12rem] font-bold text-black/25 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{  top: '10%', left: '50%',
-              animationDelay: '0.1s', animationFillMode: 'forwards' }}
-          >
-            Aamir Naqvi
-          </div>
-        </div>
        
         {/* Portrait */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center" style={{ top: '-10%' }}>
           <div className="relative">
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
               style={{
-             
-    width: '800px', // You can change size
-    height: '800px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
+                width: '800px',
+                height: '800px', 
+                animationDelay: '0.3s', 
+                animationFillMode: 'forwards' 
+              }}
             > 
               <img 
                 src="/public/me.png"
@@ -128,7 +120,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         </div> 
 
         {/* Main Typography */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '25%' }}>
           <div className="text-center z-10 px-6">
             <div 
               className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
@@ -170,9 +162,26 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           <TestimonialBadge key={index} badge={badge} />
         ))}
 
+        {/* Background Text - Aamir Naqvi at Bottom */}
+        <div 
+          ref={textRef}
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pointer-events-none transition-transform duration-100 ease-out"
+          style={{ bottom: '5%' }}
+        >
+          <div 
+            className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
+            style={{ 
+              animationDelay: '0.1s', 
+              animationFillMode: 'forwards' 
+            }}
+          >
+            AAMIR NAQVI
+          </div>
+        </div>
+
         {/* Bottom Scroll Indicator */}
         <div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
           <div className="flex flex-col items-center text-white/40">

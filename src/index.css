@@ -17,6 +17,28 @@
   .animate-fade-in-delayed {
     animation: fade-in-delayed 1.2s ease-out;
   }
+
+  @keyframes shine {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shine {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shine 2.5s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
 /* Custom scrollbar for webkit browsers */
