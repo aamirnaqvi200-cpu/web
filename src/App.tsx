@@ -99,10 +99,10 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
        
         {/* Portrait */}
         <div className="absolute inset-0 flex items-center justify-center" style={{ top: '-10%' }}>
-          <div className="relative"> style={{ zIndex: 2 }}
+          <div className="relative"> 
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
-              style={{
+              style={{ 
                 width: '800px',
                 height: '800px', 
                 animationDelay: '0.3s', 
