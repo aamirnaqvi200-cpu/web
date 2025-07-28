@@ -120,7 +120,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         </div> 
 
         {/* Main Typography */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '45%' }}>
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '60%' }}>
           <div className="text-center z-10 px-6">
             <div 
               className="text-2xl md:text-4xl lg:text-5xl font-bosenAlt tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
@@ -152,7 +152,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div 
           ref={textRef}
           className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-          style={{ zIndex: 1 }}
+          style={{ zIndex: 1, top: '-10%' }}
         >
           <div 
             className="text-[4rem] md:text-[10rem] lg:text-[12rem] font-bosenAlt text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
@@ -167,7 +167,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 
         {/* Bottom Triangle Shape */}
         <div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
           <div className="flex flex-col items-center">
