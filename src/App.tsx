@@ -162,39 +162,6 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           <TestimonialBadge key={index} badge={badge} />
         ))}
 
-      {/* Big Background Text with Cursor Follow */}
-<div 
-  id="cursor-follow-text"
-  className="absolute z-10 text-[6rem] md:text-[10rem] font-bold text-white/10 select-none pointer-events-none"
-  style={{
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    whiteSpace: 'nowrap'
-  }}
->
-  Aamir Naqvi
-</div>
-
-        useEffect(() => {
-  const textEl = document.getElementById('cursor-follow-text');
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!textEl) return;
-
-    const { clientX, clientY } = e;
-    const { innerWidth, innerHeight } = window;
-
-    const x = (clientX / innerWidth - 0.5) * 40; // More intensity
-    const y = (clientY / innerHeight - 0.5) * 40;
-
-    textEl.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
-  };
-
-  window.addEventListener('mousemove', handleMouseMove);
-  return () => window.removeEventListener('mousemove', handleMouseMove);
-}, []);
-
-
         {/* Bottom Scroll Indicator */}
         <div 
           className="absolute bottom-2 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
