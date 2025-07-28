@@ -117,6 +117,23 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           </div>
         </div> 
 
+          {/* Background Text - Aamir Naqvi at Bottom */}
+        <div 
+          ref={textRef}
+          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
+          style={{ zIndex: 0, top: '65%' }}
+        >
+          <div 
+            className="text-[4rem] md:text-[10rem] lg:text-[15rem] font-bosenAlt text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
+            style={{
+              animationDelay: '0.1s',  
+              animationFillMode: 'forwards' 
+            }}
+          >
+            AAMIR NAQVI
+          </div>
+        </div>
+        
         {/* Main Typography */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ top: '60%' }}>
           <div className="text-center z-10 px-6">
@@ -145,23 +162,6 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         {testimonialBadges.map((badge, index) => (
           <TestimonialBadge key={index} badge={badge} />
         ))}
-
-        {/* Background Text - Aamir Naqvi at Bottom */}
-        <div 
-          ref={textRef}
-          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-          style={{ zIndex: 0, top: '65%' }}
-        >
-          <div 
-            className="text-[4rem] md:text-[10rem] lg:text-[15rem] font-bosenAlt text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{
-              animationDelay: '0.1s',  
-              animationFillMode: 'forwards' 
-            }}
-          >
-            AAMIR NAQVI
-          </div>
-        </div>
 
         {/* Bottom Triangle Shape */}
         <div 
