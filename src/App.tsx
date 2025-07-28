@@ -59,19 +59,19 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const portraitRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!heroRef.current || !portraitRef.current) return;
+      if (!heroRef.current || !textRef.current) return;
       
       const { clientX, clientY } = e;
       const { innerWidth, innerHeight } = window;
       
-      const x = (clientX / innerWidth - 0.5) * 20;
-      const y = (clientY / innerHeight - 0.5) * 20;
+      const x = (clientX / innerWidth - 0.5) * 15;
+      const y = (clientY / innerHeight - 0.5) * 15;
       
-      portraitRef.current.style.transform = `translate(${x}px, ${y}px)`;
+      textRef.current.style.transform = `translate(${x}px, ${y}px)`;
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -93,15 +93,24 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
   }}
 />
 
+        {/* Background Text - Aamir Naqvi */}
+        <div 
+          ref={textRef}
+          className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
+        >
+          <div 
+            className="text-[12rem] md:text-[16rem] lg:text-[20rem] font-bold text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
+            style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+          >
+            AAMIR NAQVI
+          </div>
+        </div>
        
         {/* Portrait */}
-        <div 
-          ref={portraitRef}
-          className="absolute inset-0 flex items-center justify-center transition-transform duration-100 ease-out"
-        >
+        <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative">
             <div 
-              className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden opacity-0 animate-fade-in-delayed"
+              className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
             > 
               <img 
