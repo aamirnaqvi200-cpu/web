@@ -63,7 +63,6 @@ function App() {
   const heroRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
     useEffect(() => {
   const textEl = document.getElementById('cursor-follow-text');
   const handleMouseMove = (e: MouseEvent) => {
