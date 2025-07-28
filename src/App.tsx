@@ -150,11 +150,10 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div 
           ref={textRef}
           className="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-100 ease-out"
-          style={{ zIndex: 1, top: '-10%' }}
         >
           <div 
             className="text-[4rem] md:text-[10rem] lg:text-[12rem] font-bosenAlt text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
-            style={{
+            style={{ zIndex: 1, top: '-10%'
               animationDelay: '0.1s',  
               animationFillMode: 'forwards' 
             }}
