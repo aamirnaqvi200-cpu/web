@@ -153,7 +153,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           style={{ zIndex: 0, top: '70%' }}
         >
           <div 
-            className="text-[4rem] md:text-[10rem] lg:text-[15rem] font-bosenAlt text-white/5 select-none leading-none opacity-0 animate-fade-in-delayed"
+            className="text-[4rem] md:text-[10rem] lg:text-[15rem] font-bosenAlt text-black/30 select-none leading-none opacity-0 animate-fade-in-delayed"
             style={{
               animationDelay: '0.1s',  
               animationFillMode: 'forwards' 
