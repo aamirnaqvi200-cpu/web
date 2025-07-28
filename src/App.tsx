@@ -108,7 +108,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         </div>
        
         {/* Portrait */}
-<div className="absolute top-[90%] left-1/2 transform -translate-x-1/2 md:top-[1%] z-10">
+<div className="absolute top-[90%] left-1/2 transform -translate-x-1/2 md:top-[0.2%] z-10">
   <div className="relative">
     <div 
       className="overflow-hidden opacity-0 animate-fade-in-delayed"
