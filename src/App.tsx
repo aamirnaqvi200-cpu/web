@@ -165,7 +165,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 
         {/* Bottom Triangle Shape */}
         <div 
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed z-30"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
           <div className="flex flex-col items-center z-30">
