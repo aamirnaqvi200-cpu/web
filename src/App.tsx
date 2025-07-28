@@ -112,7 +112,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           <div className="relative">
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
-              style={{ top: '40%',
+              style={{ top: '70%',
     left: '50%',
     width: '765px', // You can change size
     height: '765px', animationDelay: '0.3s', animationFillMode: 'forwards' }}
