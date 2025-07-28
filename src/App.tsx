@@ -131,13 +131,13 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="text-center z-10 px-6">
             <div 
-              className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white/80 leading-tight opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
             >
               I EDIT
             </div>
             <div 
-              className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
+              className="text-4xl md:text-6xl lg:text-7xl font-mid tracking-tight text-white/80 leading-tight mt-2 opacity-0 animate-fade-in-delayed"
               style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}
             >
               VISUALS THAT
