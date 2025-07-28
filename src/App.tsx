@@ -40,7 +40,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
             <Star 
               key={i} 
               size={10} 
-              className="fill-white/20 text-white/20 mr-0.5" 
+              className="fill-white/20 text-white/70 mr-0.5" 
             />
           ))}
         </div>
@@ -51,7 +51,7 @@ function TestimonialBadge({ badge }: { badge: TestimonialBadge }) {
         </div>
 
         {/* Attribution */}
-        <div className="mt-1 text-sm text-white/20 font-light tracking-wide">
+        <div className="mt-1 text-sm text-white/10 font-light tracking-wide">
           {badge.attribution}
         </div>
       </div>
