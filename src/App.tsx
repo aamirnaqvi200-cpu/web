@@ -96,7 +96,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
 />
        
         {/* Portrait */}
-        <div className="absolute inset-0 flex items-center justify-center z-20" style={{ top: '-10%' }}>
+        <div className="absolute inset-0 flex items-center justify-center z-10" style={{ top: '-10%' }}>
           <div className="relative"> 
             <div 
               className="w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] overflow-hidden opacity-0 animate-fade-in-delayed"
@@ -168,7 +168,7 @@ className="relative min-h-screen w-full overflow-hidden bg-transparent"
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in-delayed"
           style={{ animationDelay: '3.5s', animationFillMode: 'forwards' }}
         >
-          <div className="flex flex-col items-center z-30">
+          <div className="flex flex-col items-center">
             <div 
               className="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[20px] border-l-transparent border-r-transparent border-t-cyan-400 animate-bounce-triangle"
             />
